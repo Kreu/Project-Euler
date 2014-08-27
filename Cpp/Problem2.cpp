@@ -10,8 +10,6 @@
 
 //Created on 26/08/14
 
-/*Recursion here is silly, but I wanted to try it out
- */
 
 #include <iostream>
 
