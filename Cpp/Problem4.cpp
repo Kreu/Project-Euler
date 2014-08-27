@@ -46,12 +46,11 @@ int main() {
 
 bool checkPalindrome(int mult) {
 	std::vector<int> digits;
-	int x = 0;
-	int input = mult;
+	int dig = 0;
 	while (mult > 0) {
-		x = mult % 10;
+		dig = mult % 10;
 		mult /= 10;
-		digits.push_back(x);
+		digits.push_back(dig);
 	}
 	int i = 1, n = digits.size();
 	while (digits[i-1] == digits[n-i]) {
