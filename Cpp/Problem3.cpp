@@ -1,6 +1,12 @@
 /*The prime factors of 13195 are 5, 7, 13 and 29.
  *What is the largest prime factor of the number 600851475143 ?
  */
+ 
+/*
+ *Technically is able to return each prime factor, not just the largest.
+ *Checks that the returned prime factors indeed make up the number again.
+ *Decided to build a list of primes rather than check them for each number...
+ */
 
 #include <iostream>
 #include <vector>
