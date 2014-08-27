@@ -9,17 +9,17 @@
 void findFactors(std::vector<int>& primeFactors, std::vector<bool>& primes, long long int nr);
 
 int main() {
-	long long int nr = 600851475143;
+    long long int nr = 600851475143;
     const int NUMBER_OF_PRIMES = 100000;
 
-	//Create a list of integers up to 100.
+    //Create a list of integers up to 100.
     //bool flag is true when it has been seen
     std::vector<bool> primes;
-	for(int i = 0; i != NUMBER_OF_PRIMES; ++i) {
-		primes.push_back(true);
-	}
+    for(int i = 0; i != NUMBER_OF_PRIMES; ++i) {
+    primes.push_back(true);
+    }
 
-    //Use Sieve of Eratosthenes - marks non-primes as false
+    //Use Sieve of Eratosthenes
     for(int i = 2; i < sqrt(primes.size()); ++i) {
         if (primes[i] == true) {
             for(int j = i*i; j <= primes.size(); j += i) {
@@ -39,7 +39,7 @@ int main() {
     }
     
     if (sum == nr) {
-        std::cout << "All is correct. Largest prime is ";
+        std::cout << "All is correct. Largest prine is ";
         int largestPrime = 0;
         for (int i : primeFactors) {
             if (i > largestPrime) {
@@ -50,7 +50,7 @@ int main() {
     }
     else {
         std::cout << sum;
-        std::cout << "Factors do not make up the number!\n";
+        std::cout << "Factors do not make up the nr...\n";
     }
 }
 
