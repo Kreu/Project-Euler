@@ -39,7 +39,7 @@ int main() {
     }
     
     if (sum == nr) {
-        std::cout << "All is correct. Largest prine is ";
+        std::cout << "All is correct. Largest prime is ";
         int largestPrime = 0;
         for (int i : primeFactors) {
             if (i > largestPrime) {
@@ -50,7 +50,7 @@ int main() {
     }
     else {
         std::cout << sum;
-        std::cout << "Factors do not make up the nr...\n";
+        std::cout << "Factors do not make up the number!\n";
     }
 }
 
