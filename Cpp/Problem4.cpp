@@ -3,7 +3,7 @@
  *Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
-//Created on 27/08/14
+//Created 27/08/14
 
 //Brute force style
 #include <iostream>
@@ -15,7 +15,7 @@ int main() {
 	std::vector<int> digits;
 	int mult = 0;
 	int currentLargest = 0;
-	int a = 1, b = 1;
+	int a = 100, b = 100;
 	bool isPalindrome = false;
 
 	//To remove redundancy, set b equal to a.
@@ -30,9 +30,9 @@ int main() {
 	//There is already redundancy here. We only need to calculate half of the table.
 	//So for each pass, increase b by 1.
 
-	while(a != 100) {
+	while(a != 1000) {
 		b = a;
-		while(b != 100) {
+		while(b != 1000) {
 			mult = a*b;
 			if (checkPalindrome(mult) && mult > currentLargest) {
 				currentLargest = mult;
