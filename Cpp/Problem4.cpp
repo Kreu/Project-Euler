@@ -18,7 +18,7 @@ int main() {
 	int a = 100, b = 100;
 	bool isPalindrome = false;
 
-	//To remove redundancy, set b equal to a.
+	//Set b equal to a.
 	//To understand, consider this small table:
 	//*---*---*---*
 	//| 1 | 2 | 3 |
