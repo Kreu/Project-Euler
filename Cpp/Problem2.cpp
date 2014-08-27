@@ -8,6 +8,11 @@
  *find the sum of the even -valued terms.
  */
 
+//Created on 26/08/14
+
+/*Recursion here is silly, but I wanted to try it out
+ */
+
 #include <iostream>
 
 void fib(int nc, int np, int& sum);
